@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tateti!</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./main.js"></script>
+    <link rel="shortcut icon" href="logo.ico">
+</head>
+
+<body>
+    <nav>
+        <img src="tateti.png" alt="tateti">
+        <div class="dropdown">
+            <img src="!.png" alt="Icono de exclamación" id="infoButton" class="info-button">
+            <div class="dropdown-content">
+              <p>Por turnos, hagan click en la casilla donde quieras posicionarte. El primer jugador en logar una linea de 3 celdas, gana!</p>
+            </div>
+          </div>
+    </nav>
+    <main>
+        <div class="board-container">
+        </div>
+        <div class="menu-container">
+            <h2 class="turn-title">Es el turno de</h2>
+            <div class="turn-container">
+                <p>O</p>
+            </div>
+            <div class="play-container" onclick="createBoard()">
+                <button class="play-button">Jugar</button>
+            </div>
+            <div id="scoreboard">
+                <p>Jugador O: <span id="playerOne">0</span></p>
+                <p>Jugador X: <span id="playerTwo">0</span></p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
